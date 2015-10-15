@@ -37,8 +37,35 @@
       </div>
     </div>
     <% end %>
-    
+    <% if p.chat_content == "사랑해" %>
+    <div class="left">
+      <div class="profile">
+        <div class="icon"></div>
+        <div class="name">Bot</div>
+      </div>
+      <div class="balloon">
+        <div class="tail"></div>
+        <div class"picture">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Coraz%C3%B3n.svg/220px-Coraz%C3%B3n.svg.png">
+        </div>
+      </div>
+    </div>
+    <% end %>
     <% if p.chat_type == "bot" %>
+    <% if p.picurlchat != "" %>
+    <div class="left">
+      <div class="profile">
+        <div class="icon"></div>
+        <div class="name">Bot</div>
+      </div>
+      <div class="balloon">
+        <div class="tail"></div>
+        <div class"picture">
+          <img src= <%= p.picurlchat %> height = "150" width="200">
+        </div>
+      </div>
+    </div>
+    <% end %>
     <div class="left">
       <div class="profile">
         <div class="icon"></div>

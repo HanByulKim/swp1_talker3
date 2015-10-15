@@ -3,6 +3,7 @@ class CreateChats < ActiveRecord::Migration
     create_table :chats do |t|
       t.string :chat_type
       t.text :chat_content
+      t.text :picurlchat
 
       t.timestamps null: false
     end

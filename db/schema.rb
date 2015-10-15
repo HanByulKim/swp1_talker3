@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 20151014111921) do
   create_table "chats", force: :cascade do |t|
     t.string   "chat_type"
     t.text     "chat_content"
+    t.text     "picurlchat"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
   end
@@ -23,6 +24,7 @@ ActiveRecord::Schema.define(version: 20151014111921) do
   create_table "talks", force: :cascade do |t|
     t.text     "ask"
     t.text     "answer"
+    t.text     "picurltalk"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
